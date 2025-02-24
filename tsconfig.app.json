@@ -2,7 +2,13 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-
+    // config for d.ts generation
+    "declaration": true,
+    "outDir": "dist",
+    "emitDeclarationOnly": true,
+    "declarationDir": "dist/type",
+    
+    "noEmit": false,
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
